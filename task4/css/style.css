@@ -1,0 +1,134 @@
+/* BASIC RESET - Makes all elements use border-box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* BODY STYLING - Overall page appearance */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* MAIN CONTAINER - The white box holding the form */
+.container {
+    max-width: 720px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+/* HEADINGS */
+h1 {
+    margin-top: 0;
+    color: #222;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* FORM SECTIONS - Space between different form sections */
+.form-section {
+    margin-bottom: 25px;
+}
+
+/* FORM ROW - Makes first name and last name sit side by side */
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+/* FORM GROUP - Spacing for each input field and its label */
+.form-group {
+    margin-bottom: 16px;
+    flex: 1;
+}
+
+/* LABELS - Bold text above each input */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+/* ALL INPUT FIELDS - Styling for text boxes, dropdowns, and text areas */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* FOCUS STATE - Changes border color when user clicks on an input */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #666;
+}
+
+/* CHECKBOX STYLING - Makes checkbox and label appear side by side */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+}
+
+.checkbox-group label {
+    display: inline;
+    margin: 0;
+}
+
+/* SUBMIT BUTTON */
+button {
+    background-color: #333;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+/* RESPONSIVE DESIGN - Stacks fields vertically on small screens */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+/* RADIO BUTTON STYLING - Makes radio buttons appear side by side */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.radio-group input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+.radio-label {
+    display: inline;
+    margin: 0;
+    font-weight: normal;
+}
