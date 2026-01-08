@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
     <main class="container">
@@ -23,23 +25,13 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="firstName">First Name *</label>
-                        <input
-                            type="text"
-                            id="firstName"
-                            name="first_name"
-                            placeholder="Enter first name"
-                            required
+                        <input type="text" id="firstName" name="first_name" placeholder="Enter first name" required
                             minlength="2">
                     </div>
 
                     <div class="form-group">
                         <label for="lastName">Last Name *</label>
-                        <input
-                            type="text"
-                            id="lastName"
-                            name="last_name"
-                            placeholder="Enter last name"
-                            required
+                        <input type="text" id="lastName" name="last_name" placeholder="Enter last name" required
                             minlength="2">
                     </div>
                 </div>
@@ -47,30 +39,16 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="dob">Date of Birth *</label>
-                        <input
-                            type="date"
-                            id="dob"
-                            name="date_of_birth"
-                            required>
+                        <input type="date" id="dob" name="date_of_birth" required>
                     </div>
 
                     <div class="form-group">
                         <label>Gender *</label>
                         <div class="radio-group">
-                            <input
-                                type="radio"
-                                id="male"
-                                name="gender"
-                                value="male"
-                                required>
+                            <input type="radio" id="male" name="female" value="male" required>
                             <label for="male" class="radio-label">Male</label>
 
-                            <input
-                                type="radio"
-                                id="female"
-                                name="gender"
-                                value="female"
-                                required>
+                            <input type="radio" id="female" name="female" value="female" required>
                             <label for="female" class="radio-label">Female</label>
                         </div>
                     </div>
@@ -83,33 +61,18 @@
 
                 <div class="form-group">
                     <label for="email">Email Address *</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="example@email.com"
-                        required>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="phone">Phone Number *</label>
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="10-digit phone number"
-                        pattern="[0-9]{10}"
+                    <labeln for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="10-digit phone number" pattern="[0-9]{10}"
                         required>
                 </div>
 
                 <div class="form-group">
                     <label for="address">Address *</label>
-                    <input
-                        type="text"
-                        id="address"
-                        name="address"
-                        placeholder="Enter your full address"
-                        required>
+                    <input type="text" id="address" name="address" placeholder="Enter your full address" required>
                 </div>
             </section>
 
@@ -119,12 +82,7 @@
 
                 <div class="form-group">
                     <label for="password">Password *</label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        minlength="8"
-                        required>
+                    <input type="password" id="password" name="password" minlength="8" required>
                 </div>
 
                 <div class="form-group">
@@ -144,22 +102,14 @@
 
                 <div class="form-group">
                     <label for="about">About You</label>
-                    <textarea
-                        id="about"
-                        name="about"
-                        rows="4"
-                        placeholder="Tell us something about yourself..."
+                    <textarea id="about" name="about" rows="4" placeholder="Tell us something about yourself..."
                         maxlength="300"></textarea>
                 </div>
             </section>
 
             <!-- Terms -->
             <div class="form-group checkbox-group">
-                <input
-                    type="checkbox"
-                    id="terms"
-                    name="terms"
-                    required>
+                <input type="checkbox" id="terms" name="terms" required>
                 <label for="terms">
                     I agree to the terms and conditions *
                 </label>
@@ -172,4 +122,5 @@
     </main>
 
 </body>
+
 </html>
