@@ -1,0 +1,130 @@
+
+Git Learning Summary – Day 5
+
+
+
+Topic: Git & GitHub Fundamentals
+
+--------------------------------------------------
+1. Introduction to Git
+--------------------------------------------------
+Git is a Distributed Version Control System (DVCS) used to track changes
+in source code during software development. It allows multiple developers
+to work on the same project efficiently without overwriting each other’s work.
+
+Key advantages of Git:
+- Version history tracking
+- Collaboration support
+- Branching and merging
+- Backup and recovery using remote repositories
+
+--------------------------------------------------
+2. Git Basics 
+--------------------------------------------------
+Basic workflow:
+Working Directory → Staging Area → Repository
+
+Important basic commands:
+- git init        : Initialize a new Git repository
+- git status      : Check the current state of files
+- git add         : Stage changes
+- git commit      : Save changes to the repository
+- git log         : View commit history
+
+--------------------------------------------------
+3. Git Terminologies (23:02 – Git Terminologies)
+--------------------------------------------------
+Repository  : A project tracked by Git
+Commit      : A snapshot of changes
+Branch      : Independent line of development
+HEAD        : Pointer to the current commit
+Remote      : Repository hosted online (e.g., GitHub)
+Fork        : Personal copy of someone else’s repository
+
+--------------------------------------------------
+4. Git Behind the Scenes 
+--------------------------------------------------
+Git internally works using:
+- Blobs   : Store file content
+- Trees   : Store directory structure
+- Commits : Point to trees and previous commits
+
+Git uses SHA-1 hashes to uniquely identify commits.
+Each commit stores:
+- Author
+- Timestamp
+- Commit message
+- Parent commit reference
+
+--------------------------------------------------
+5. Git Branches and Conflicts 
+--------------------------------------------------
+Branches allow parallel development without affecting main code.
+
+Branch commands:
+- git branch                 : List branches
+- git branch <name>          : Create branch
+- git checkout <name>        : Switch branch
+- git merge <branch>         : Merge branch into current branch
+
+Merge conflicts occur when:
+- Same file is modified differently in multiple branches
+
+Conflicts are resolved manually and then committed.
+
+--------------------------------------------------
+6. Git Diff, Stash and Tag (01:46:09)
+--------------------------------------------------
+git diff:
+- Shows differences between commits, branches, or working directory
+
+git stash:
+- Temporarily saves uncommitted changes
+Commands:
+- git stash
+
+
+git tag:
+- Used to mark specific points (e.g., releases)
+
+
+--------------------------------------------------
+7. Git Rebase and Reflog 
+--------------------------------------------------
+git rebase:
+- Reapplies commits on top of another branch
+- Creates a cleaner commit history
+
+git reflog:
+- Keeps a log of all HEAD movements
+- Useful for recovering lost commits
+
+--------------------------------------------------
+8. Pushing Code to GitHub 
+--------------------------------------------------
+Steps to push code:
+- git remote add origin <repo-url>
+- git branch -M main
+- git push -u origin main
+
+Used HTTPS / SSH authentication to connect local repository to GitHub.
+
+
+--------------------------------------------------
+9. Porcelain Commands Used Today
+--------------------------------------------------
+git status
+git add .
+git commit -m "message"
+git branch
+git checkout
+git merge
+git pull
+git push
+git diff
+git stash
+git tag
+git rebase
+git reflog
+
+
