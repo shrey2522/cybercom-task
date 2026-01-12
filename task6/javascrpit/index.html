@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 6 - JavaScript Basics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+</head>
+<body>
+
+    <h1>JavaScript Fundamentals Demo</h1>
+
+    <p id="output">Click the button to run JavaScript</p>
+
+    <button onclick="runJavaScript()">Run JavaScript</button>
+
+    <!-- JavaScript placed at the bottom (Best Practice) -->
+    <script>
+        /*
+         Day 6 Topics Covered:
+         - Variables
+         - Data Types
+         - Console Logging
+         - Functions
+         - Conditions
+         - DOM Manipulation
+        */
+
+        function runJavaScript() {
+
+            // Variables
+            let name = "Shrey";
+            const age = 21;
+            let isDeveloper = true;
+
+            // Data Types
+            console.log("Name:", name, typeof name);
+            console.log("Age:", age, typeof age);
+            console.log("Is Developer:", isDeveloper, typeof isDeveloper);
+
+            // Basic Operation
+            let nextYearAge = age + 1;
+            console.log("Age next year:", nextYearAge);
+
+            // Condition
+            let message;
+            if (age >= 18) {
+                message = "Eligible to work as a developer.";
+            } else {
+                message = "Not eligible yet.";
+            }
+
+            // DOM Manipulation
+            document.getElementById("output").innerHTML =
+                "Hello " + name + "!<br>" +
+                "Age: " + age + "<br>" +
+                message;
+
+            // Console Log for debugging
+            console.log("JavaScript executed successfully");
+        }
+    </script>
+
+</body>
+</html>
