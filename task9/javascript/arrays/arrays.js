@@ -2,6 +2,9 @@
 
 let arr = ["1", 2, 4];
 
+console.log(arr.indexOf(2));
+
+
 // normalize array
 arr = arr.map(String);
 
