@@ -43,5 +43,8 @@
 //   console.log("Connecting to database...");
 //   attempts++;
 // } while (attempts < 1); // Even if this was false, the code above ran once.
+// let  arr = [1,2,4];
+// console.log(arr.includes(1));
 
-
+let arr = ["1", 2, 4].map(String);
+console.log(arr.includes(1)); 
