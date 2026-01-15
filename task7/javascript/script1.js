@@ -1,4 +1,4 @@
-let marks = 90;
+let marks = Number();
 
 
 
